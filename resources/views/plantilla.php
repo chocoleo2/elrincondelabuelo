@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>@yield('titulo')</title>
+  <title>POS</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -80,7 +80,11 @@
       </li>
 <!-- PERFIL -->
       <li class="nav-item">
-      @yield('barrasearch')
+      <?php
+      
+      include ("modulos/barrasearch.php");
+
+      ?>
       </li>
     </ul>
   </nav>
@@ -109,7 +113,12 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        yield('menulateral')
+
+      <?php
+      
+      include ("modulos/menulateral.php");
+
+      ?>
 
       </nav>
       <!-- /.sidebar-menu -->
