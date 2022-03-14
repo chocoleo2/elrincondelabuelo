@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('plantilla.php', function () {
+Route::get('plantilla', function () {
     return view('plantilla');
+
 });
