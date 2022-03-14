@@ -1,18 +1,39 @@
-@extends('plantilla')
-@section('titulo','PUNTO VENTA')
-@section('menulateral')
 
 <nav class="mt-2">
    
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">    
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
     <li class="nav-item">
             <a href="" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
+                USUARIOS
               </p>
             </a>
-          </li>    
+          </li> 
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                CATEGORIAS
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                PRODUCTOS
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                CLIENTES
+              </p>
+            </a>
+          </li>  
     <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link">
             <i class="fa-solid fa-table-list"></i>
@@ -25,19 +46,19 @@
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Crear Venta</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <p>Administrar Venta</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p> Reporte venta</p>
                 </a>
               </li>
             </ul>
@@ -45,9 +66,3 @@
     </ul>
  </nav>
 
- @endsection
-
-@push('scripts')
-	<script type="text/javascript" src="js/vue-resource.js"></script>
-@endpush
-<input type="hidden" name="route" value="{{url('/')}}">
